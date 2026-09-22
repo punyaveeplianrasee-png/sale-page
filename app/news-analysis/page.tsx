@@ -3,7 +3,16 @@ import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../components/site-shell";
 import { WeeklyNews } from "../components/weekly-news";
 
-export const metadata: Metadata = { title: "News Analysis | Trade The Future" };
+export const metadata: Metadata = {
+  title: "News Analysis วิเคราะห์ข่าวทอง",
+  description: "ติดตามข่าวเศรษฐกิจสำคัญช่วงตลาดนิวยอร์ก พร้อมสรุปผลกระทบที่อาจมีต่อราคาทองเป็นภาษาไทย",
+  alternates: { canonical: "/news-analysis" },
+  openGraph: {
+    title: "News Analysis วิเคราะห์ข่าวทอง | Trade The Future",
+    description: "ข่าวเศรษฐกิจสำคัญ พร้อมสรุปผลกระทบที่อาจมีต่อราคาทองเป็นภาษาไทย",
+    url: "/news-analysis",
+  },
+};
 
 const examples = [
   {

@@ -8,8 +8,18 @@ import { SiteHeader, SiteFooter } from "../components/site-shell";
 import { ALGO, faqs } from "../content";
 import { LineContact } from "../components/line-contact";
 import { AnimatedFaq } from "../components/animated-faq";
+import type { Metadata } from "next";
 
-export const metadata = { title: "สำรวจเพิ่มเติม | Trade The Future" };
+export const metadata: Metadata = {
+  title: "ค้นหาสไตล์และวางแผนทุนเทรด",
+  description: "ทำ Quiz ค้นหาสไตล์การเรียนรู้ ลองคำนวณทุนตามความเสี่ยง และรู้จักเครื่องมือ GSS, TTS และ TMC",
+  alternates: { canonical: "/explore" },
+  openGraph: {
+    title: "ค้นหาสไตล์และวางแผนทุนเทรด | Trade The Future",
+    description: "ทำ Quiz ค้นหาสไตล์การเรียนรู้และลองคำนวณทุนตามความเสี่ยงที่เหมาะกับคุณ",
+    url: "/explore",
+  },
+};
 function Label({ n, children }: { n: string; children: React.ReactNode }) {
   return (
     <p className="eyebrow">

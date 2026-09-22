@@ -3,7 +3,16 @@ import Link from "next/link";
 import { SiteHeader, SiteFooter } from "../components/site-shell";
 import { Arrow } from "../components/art";
 
-export const metadata: Metadata = { title: "เปิดบัญชีเทรด | Trade The Future" };
+export const metadata: Metadata = {
+  title: "เปิดบัญชีเทรด",
+  description: "รายละเอียดและช่องทางเปิดบัญชีเทรดกับ Connext ผ่าน Trade The Future",
+  alternates: { canonical: "/open-account" },
+  openGraph: {
+    title: "เปิดบัญชีเทรด | Trade The Future",
+    description: "รายละเอียดและช่องทางเปิดบัญชีเทรดกับ Connext ผ่าน Trade The Future",
+    url: "/open-account",
+  },
+};
 
 export default function OpenAccountPage() {
   return <>
